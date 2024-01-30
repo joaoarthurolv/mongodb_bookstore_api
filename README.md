@@ -29,3 +29,29 @@ We're all set. The app is listening on the port 3000. You can open your API test
 - (POST) /books - Insert a book 
 - (DELETE) /books/:id - Delete a book by its id.
 - (PATCH) /books/:id - Update a book by its id.
+
+## JSON example 
+
+Here's an example of a json to insert a book, but feel free to change it to your purposes.
+
+```javascript
+{
+	"title": "The Lightning Thief",
+	"author": "Rick Riordan",
+	"rating": 9,
+	"pages": 300,
+	"genres": [
+			"adventure"
+	],
+	"reviews": [
+		{
+			"name": "Link",
+			"body": "Great book!!"
+		},
+		{
+			"name": "MArio",
+			"body": "Not so bad"
+		}
+	]
+}
+```
